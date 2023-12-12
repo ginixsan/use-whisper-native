@@ -32,7 +32,7 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "@ginixsan/react-hooks-async": "^0.0.2",
+    "@chengsokdara/react-hooks-async": "^0.0.2",
     "@ffmpeg/ffmpeg": "^0.12.7",
     "axios": "^1.6.2",
     "hark": "^1.2.3",
