@@ -1,6 +1,6 @@
 {
   "name": "@ginixsan/use-whisper",
-  "version": "0.2.0",
+  "version": "1.0.2",
   "description": "React Hook for OpenAI Whisper API with speech recorder and silence removal built-in.",
   "keywords": [
     "react",
@@ -17,7 +17,7 @@
     "remove",
     "removal"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/ginixsan/use-whisper-native",
   "bugs": "",
   "license": "MIT",
   "author": "Gines Sanz Sanchis <gueshecillo@gmail.com> (https://www.thehubgrowth.com)",
@@ -52,7 +52,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "exports": {
     "node": "./dist/index.js",
     "require": "./dist/index.js",

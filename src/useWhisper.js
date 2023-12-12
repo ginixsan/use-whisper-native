@@ -1,4 +1,4 @@
-import { useEffectAsync, useMemoAsync } from '@ginixsan/react-hooks-async'
+import { useEffectAsync, useMemoAsync } from '@chengsokdara/react-hooks-async'
 
 import { useEffect, useRef, useState } from 'react'
 
