@@ -1,0 +1,66 @@
+{
+  "name": "@ginixsan/use-whisper",
+  "version": "0.2.0",
+  "description": "React Hook for OpenAI Whisper API with speech recorder and silence removal built-in.",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "openai",
+    "api",
+    "whisper",
+    "speech",
+    "voice",
+    "record",
+    "recorder",
+    "silence",
+    "remove",
+    "removal"
+  ],
+  "homepage": "",
+  "bugs": "",
+  "license": "MIT",
+  "author": "Gines Sanz Sanchis <gueshecillo@gmail.com> (https://www.thehubgrowth.com)",
+  "repository": "github:ginixsan/use-whisper",
+  "scripts": {
+    "dev": "env NODE_ENV=development node src/index.js",
+    "build": "env NODE_ENV=production node src/index.js",
+    "lint-fix": "eslint ./src --ext .ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint-format": "prettier  --loglevel warn --write \"./**/*.{ts,tsx,css,md,json}\"",
+    "lint": "yarn lint-format && yarn lint-fix",
+    "test": "yarn run tsc && yarn run lint",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "@ginixsan/react-hooks-async": "^0.0.2",
+    "@ffmpeg/ffmpeg": "^0.12.7",
+    "axios": "^1.6.2",
+    "hark": "^1.2.3",
+    "lamejs": "github:zhuker/lamejs",
+    "recordrtc": "^5.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.1",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    "node": "./dist/index.js",
+    "require": "./dist/index.js",
+    "import": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
+}
